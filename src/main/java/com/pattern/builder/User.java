@@ -1,5 +1,9 @@
 package com.pattern.builder;
 
+import lombok.Getter;
+import lombok.ToString;
+
+@Getter @ToString
 public class User {
     private Long id;
     private String name;
@@ -44,21 +48,5 @@ public class User {
         name = userBuilder.name;
         email = userBuilder.email;
         password = userBuilder.password;
-    }
-
-    public Long getId() {
-        return id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public String getPassword() {
-        return password;
     }
 }
